@@ -1,0 +1,94 @@
+<!-- INDEX DE CARRITO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas YSYSMO</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./images/logo.jpg" alt="logo">
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/carrito.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div>
+                <h1>YSYSMO</h1>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>EL CARRITO BEBE</h3>
+                <div class="card-items">
+
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> $</h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./images/campo.jpg" alt="">
+                    <p><span>5000</span>$</p>
+                </div>
+                <p class="title">11/11 CAMPO</p>
+                <a href="" data-id="1" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/platea.jpg" alt="">
+                    <p><span>6000</span>$</p>
+                </div>
+                <p class="title"> 11/11 PLATEA</p>
+                <a href="" class="btn-add-cart" data-id="2">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/campo.jpg" alt="">
+                    <p><span>5000</span>$</p>
+                </div>
+                <p class="title"> 12/11 CAMPO</p>
+                <a href="" data-id="3" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/platea.jpg" alt="">
+                    <p><span>6000</span>$</p>
+                </div>
+                <p class="title"> 12/11 PLATEA</p>
+                <a href="" data-id="4" class="btn-add-cart">agregar al carrito</a>
+            </div>
+        </div>    
+    </section>
+    <section class="container">
+        <p>¡SE CANCELA POR ALTAS TEMPERATURAS!</p>
+        <button>
+            <a href="index2.html">Busca tu ciudad</a>
+        </button>
+    </section>
+    
+    
+
+    <section id="main">
+
+    </section>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./main.js" ></script>
+</body>
+</html>
